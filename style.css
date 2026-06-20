@@ -1,0 +1,91 @@
+:root {
+    --bg-green: #d4f0d0;
+    --card-bg: #ffffff;
+    --text-main: #000000;
+    --text-muted: #555555;
+    --accent-pink: #ff1493;
+    --correct-green: #228b22;
+    --incorrect-red: #d90000;
+    --border-dark: #000000;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--bg-green);
+    color: var(--text-main);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 3px solid var(--border-dark);
+    border-radius: 0;
+    padding: 30px;
+    box-shadow: 8px 8px 0px var(--border-dark);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-main);
+    background-color: var(--accent-pink);
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px solid var(--border-dark);
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+button, select {
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    border: 2px solid var(--border-dark);
+    border-radius: 0;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px var(--border-dark);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+button:hover, select:hover {
+    background-color: var(--accent-pink);
+}
+
+button:active, select:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px 0px var(--border-dark);
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 25px;
+}
