@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>TYPING SPEED TEST</h1>
+
+        <div class="controls">
+            <select id="duration-select">
+                <option value="60">1 MINUTE</option>
+                <option value="120">2 MINUTES</option>
+            </select>
+            <button id="reset-btn">RESTART</button>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-box">
+                <div class="stat-lbl">TIME</div>
+                <div class="stat-val" id="timer-val">60</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-lbl">WPM</div>
+                <div class="stat-val accent" id="wpm-val">0</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-lbl">ACCURACY</div>
+                <div class="stat-val" id="accuracy-val">100%</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-lbl">CHARACTERS</div>
+                <div class="stat-val" id="chars-val">0</div>
+            </div>
+        </div>
+
+        <div class="text-display-box" id="display-box">
+            <div class="text-scroll" id="text-container"></div>
+        </div>
+
+        <input type="text" class="input-area" id="input-field" placeholder="START TYPING HERE..." autocomplete="off" autofocus>
+    </div>
+</div>
+
+<div class="modal" id="results-modal">
+    <div class="modal-content">
+        <h2>TEST COMPLETE</h2>
+        <div class="modal-divider"></div>
+        <p>SPEED: <strong id="final-wpm" class="accent">0</strong> WPM</p>
+        <p>KEYS HIT: <strong id="final-chars">0</strong></p>
+        <button id="close-modal-btn">TRY AGAIN</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
