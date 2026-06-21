@@ -17,10 +17,8 @@ i built this project to act as a personal tool for improving my typing speed thr
 ## How To Contribute:
  1. Fork the repository: Click the fork button at top right to create your own copy
  2. Clone the repository: clone your fork to your local machine.
-  * git clone https://github.com/Abdidev1/Typing Speed Test
- 3. Create a branch : create branch for specific feauture or fix:
-  * ```bash
-   git checkout -b feauture/Your Feature Name
+  * git clone https://github.com/Abdidev1/Typing-Speed-Test
+ 3. Create a branch : create branch for specific feauture or fix.
  4. Make changes: Implement your improvements or bug fixes
  5. Commit & Push: Commit your changes and push them to your fork
  6. Submit a pull request
