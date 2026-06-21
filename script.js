@@ -20,13 +20,13 @@ let totalKeystrokes = 0;
 const durationSelect = document.getElementById('duration-select');
 const reserBtn = document.getElementById('reset-btn');
 const timerVal = document.getElementById('timer-val');
-const wpmVal = document.getElementById('wpn-val');
+const wpmVal = document.getElementById('wpm-val');
 const accuracyVal = document.getElementById('accuracy-val');
 const charsVal = document.getElementById('chars-val');
 const textContainer = document.getElementById('text-container');
 const displayBox = document.getElementById('display-box');
 const inputField = document.getElementById('input-field');
-const resultsModal = document.getElementById('result-modal');
+const resultsModal = document.getElementById('results-modal');
 const closeModalBtn = document.getElementById('close-modal-btn');
 
 function init() {
